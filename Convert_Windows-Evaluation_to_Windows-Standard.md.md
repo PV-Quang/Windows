@@ -37,3 +37,8 @@ dism /online /set-edition:ServerStandard /productkey:TVRH6-WHNXV-R9WG3-9XRFY-MY8
 slmgr /skms kms.digiboy.ir
 slmgr /ato
 ```
+
+### Kiểm tra thời hạn license
+```shell
+slmgr /xpr
+```
