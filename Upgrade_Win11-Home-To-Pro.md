@@ -13,6 +13,9 @@ exit
 > Đợi windows upgrade và khởi động lên
 
 ### Active license windows
+
+<img width="847" height="519" alt="image" src="https://github.com/user-attachments/assets/f2586190-f414-4e33-989c-3767ab1e7010" />
+
 > Mở powershell và chạy lệnh sau:
 ```shell
 irm https://get.activated.win | iex
