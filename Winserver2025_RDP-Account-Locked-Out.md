@@ -13,7 +13,7 @@
 <img width="752" height="530" alt="image" src="https://github.com/user-attachments/assets/fa9d4ecd-1216-4a13-b69e-055cc2c056f9" />
 <p>
   
-####  > Bước 3: Nhấn chọn Security Settings
+#### Bước 3: Nhấn chọn Security Settings
 
 <img width="752" height="527" alt="image" src="https://github.com/user-attachments/assets/c44219e2-c78c-4cb0-a65c-995c1bcdbdbb" />
 <p>
