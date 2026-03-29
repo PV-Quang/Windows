@@ -1,3 +1,5 @@
+> Link download: https://congnghetienphat-my.sharepoint.com/:u:/g/personal/quang_pham_tpcoms_vn/IQALlu84UuIhTp0g1vTOiCi1AWo6_vMrXPrXP3arBxq6uj4?e=YVC5x3
+
 #### Mở powershell và chạy lệnh sau
 ```shell
 irm https://get.activated.win | iex
