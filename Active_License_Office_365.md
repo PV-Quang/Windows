@@ -1,4 +1,7 @@
-> Link download: https://congnghetienphat-my.sharepoint.com/:u:/g/personal/quang_pham_tpcoms_vn/IQALlu84UuIhTp0g1vTOiCi1AWo6_vMrXPrXP3arBxq6uj4?e=YVC5x3
+> Link download từ trang chủ Microsoft: https://www.microsoft.com/en-us/microsoft-365/download-office
+<p>
+
+> Link download từ Ondriver: https://congnghetienphat-my.sharepoint.com/:u:/g/personal/quang_pham_tpcoms_vn/IQALlu84UuIhTp0g1vTOiCi1AWo6_vMrXPrXP3arBxq6uj4?e=YVC5x3
 
 #### Mở powershell và chạy lệnh sau
 ```shell
