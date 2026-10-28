@@ -14,7 +14,7 @@ Tài liệu hướng dẫn cách cấu hình **KMS Client Key**, chỉ định *
 
 Ví dụ dưới đây là màn hình **Activation** trên Windows Server 2022 Standard khi hệ điều hành chưa được kích hoạt.
 
-![Windows Server 2022 Standard đang ở trạng thái chưa kích hoạt](Windows_Server_Standard_KMS_Huong_Dan_assets/01-windows-server-chua-kich-hoat.png)
+![Windows Server 2022 Standard đang ở trạng thái chưa kích hoạt](assets/01-windows-server-chua-kich-hoat.png)
 
 *Hình 1. Windows Server Standard chưa được kích hoạt.*
 
@@ -54,7 +54,7 @@ Trong đó, `slmgr /ipk` là lệnh cài đặt Product Key cho Windows. Sau khi
 
 Nếu máy đã có **đúng KMS Client Key** cho phiên bản Windows Server đang dùng thì có thể bỏ qua bước này và chuyển sang **Bước 2**. Việc màn hình Activation hiển thị Product ID hoặc Product Key không tự nó xác nhận máy đã có đúng KMS Client Key.
 
-![Ví dụ màn hình Activation hiển thị thông tin Product ID và Product Key](Windows_Server_Standard_KMS_Huong_Dan_assets/02-man-hinh-product-key.png)
+![Ví dụ màn hình Activation hiển thị thông tin Product ID và Product Key](assets/02-man-hinh-product-key.png)
 
 *Hình 2. Ví dụ thông tin Product ID và Product Key trên màn hình Activation.*
 
@@ -72,7 +72,7 @@ slmgr /skms kms.digiboy.ir
 
 Nếu tổ chức có **KMS Server được cấp phép và quản lý hợp lệ**, nên thay địa chỉ trong lệnh bằng KMS Server của tổ chức.
 
-![Ví dụ cấu hình KMS Server trên Windows Server 2025 Standard](Windows_Server_Standard_KMS_Huong_Dan_assets/03-cau-hinh-kms-server.png)
+![Ví dụ cấu hình KMS Server trên Windows Server 2025 Standard](assets/03-cau-hinh-kms-server.png)
 
 *Hình 3. Windows hiển thị thông báo sau khi cấu hình địa chỉ KMS Server.*
 
@@ -88,13 +88,12 @@ Lệnh `slmgr /ato` yêu cầu Windows tiến hành **Activation** thông qua ph
 
 Trên giao diện **Settings → Activation** (đường dẫn hiển thị có thể khác nhau giữa các phiên bản Windows Server), trạng thái có thể chuyển từ **Not active** sang **Active** như ví dụ bên dưới.
 
-![Ví dụ Windows Server 2025 Standard hiển thị trạng thái Active](Windows_Server_Standard_KMS_Huong_Dan_assets/04-windows-server-da-kich-hoat.png)
+![Ví dụ Windows Server 2025 Standard hiển thị trạng thái Active](assets/04-windows-server-da-kich-hoat.png)
 
 *Hình 4. Ví dụ Windows Server hiển thị trạng thái Active sau khi kích hoạt.*
 
 ## 3. Lưu ý khi sử dụng
 
-- Ba lệnh trong tài liệu có chức năng riêng: **`/ipk` cài KMS Client Key**, **`/skms` chỉ định KMS Server**, và **`/ato` gửi yêu cầu kích hoạt**. Chúng không phải lệnh chuyển Windows Server Evaluation sang Standard.
 - Các KMS Client Key liệt kê ở Bước 1 là **GVLK**, không phải giấy phép Windows Server. Trạng thái **Active** không tự chứng minh tổ chức có quyền sử dụng phần mềm hợp lệ.
 - `kms.digiboy.ir` là dịch vụ KMS công cộng bên thứ ba. Không nên áp dụng dịch vụ này cho **VM production hoặc VM cung cấp cho khách hàng** vì không kiểm soát được tính sẵn sàng, độ tin cậy và việc tuân thủ điều khoản cấp phép. Với môi trường Cloud Provider, cần dùng phương án cấp phép Windows Server hợp lệ.
 
